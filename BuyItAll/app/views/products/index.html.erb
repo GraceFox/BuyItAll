@@ -4,6 +4,6 @@
 
 <ul>
   <% @products.each do |product| %>
-    <li><%= product.name %></li>
-  <% end %>
+    <li><%= link_to product.name, product %></li>
+    <% end %>
 </ul>
