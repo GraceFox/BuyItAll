@@ -1,0 +1,15 @@
+<h1> Cart </h1>
+
+<p>Happy shopping</p>
+
+<ul>
+  <% @products.each do |product| %>
+    <li><%= link_to product.name, product %></li>
+    <%= form_tag('/cart', method: 'delete') do %>
+      <%= hidden_field_tag(:id, product.id) %>
+      <%= submit_tag('remove from cart') %>
+    <% end %>
+  <% end %>
+</ul>
+
+  <%= link_to 'buy it all', '/cart/buy', method: 'post' %>

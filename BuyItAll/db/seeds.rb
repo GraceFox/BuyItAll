@@ -11,4 +11,4 @@ Product.create(name: "Flying Horse aka Pegasus", price: 105.0)
 Product.create(name: "Flying Possum", price: 50.0)
 Product.create(name: "Flying Sheep", price: 35.0)
 Product.create(name: "Flying Octopode", price: 85.0)
-
+User.create(name: "The Magical Mr Mistoffelees")

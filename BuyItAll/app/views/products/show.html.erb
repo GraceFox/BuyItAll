@@ -4,7 +4,10 @@
 
 <p> A flying animal of your choice - fantastic for reaching high places </p>
 
-<a class="btn btn-success" href="/post/buy">Buy Now not currently working</a>
+<%= form_tag("/cart", method: "post") do %>
+<%= hidden_field_tag(:id, @product.id) %>
+<%= submit_tag("Add to cart") %>
+<%end %>
 
 <div>
 <a class="btn btn-danger" href="/products">Home</a>
