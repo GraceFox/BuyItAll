@@ -19,7 +19,7 @@ body {
   background-image: url(/images/flags.jpg);
 }
 
-h1 {
+h1 h2 {
   font-family: 'Niconne', cursive;
   size: 300px;
   color: #6E5160;
@@ -65,4 +65,10 @@ h1 {
 .cart p {
   margin 0 0 40px;
 }
+
+#new_user {
+  width: 1000px;
+  margin: 80px 0 0;
+}
+
 

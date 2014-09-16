@@ -15,7 +15,7 @@
 
 <header class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+
           <%= link_to " ", '#', id: "logo" %>
           <nav>
             <ul class="nav pull-right">
@@ -23,13 +23,13 @@
               <li><%= link_to "Cart",    '/cart' %></li>
               <li><%= render 'devise/registration_items' %></li>
               <li><%= render 'devise/login_items' %></li>
-            </ul>
+             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <div class="container">
 
+   <div class="container">
 <%= yield %>
 
 </body>
