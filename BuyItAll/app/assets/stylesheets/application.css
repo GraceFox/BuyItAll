@@ -15,6 +15,9 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-image: url(/images/flags.jpg);
+}
 
 h1 {
   font-family: 'Niconne', cursive;
@@ -27,6 +30,7 @@ h1 {
     size: 200px;
     color: #CC6666;
   }
+
 
 #add_to_cart {
   margin-top: 5px;
@@ -44,3 +48,22 @@ h1 {
   vertical-align: middle;
   box-sizing: border-box;
 }
+
+.cart {
+  width: 1000px;
+  margin: 80px 0 0;
+
+}
+
+.cart li {
+  margin: 10px 10px;
+  text-decoration: none;
+/*  padding-left: 10px;*/
+  list-style-type: none;
+}
+
+.cart p {
+  margin 0 0 40px;
+}
+
+

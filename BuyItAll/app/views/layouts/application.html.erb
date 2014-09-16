@@ -13,10 +13,21 @@
     <%= content_tag :div, msg, class: name %>
   <% end %>
 
-  <div>
-<%=link_to "home",'/products'%>
-<%=link_to "cart",'/cart'%>
-  </div>
+<header class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <%= link_to " ", '#', id: "logo" %>
+          <nav>
+            <ul class="nav pull-right">
+              <li><%= link_to "Home",    '/products' %></li>
+              <li><%= link_to "Cart",    '/cart' %></li>
+              <li><%= link_to "Sign in", '#' %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
 
 <%= yield %>
 

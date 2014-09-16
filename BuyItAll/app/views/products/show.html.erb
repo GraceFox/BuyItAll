@@ -6,12 +6,13 @@
 
 <div id = add_to_cart>
   <%= form_tag("/cart", method: "post") do %>
-  <%= hidden_field_tag(:id, @product.id) %>
-  <%= submit_tag("Add to cart") %>
+    <%= hidden_field_tag(:id, @product.id) %>
+    <%= submit_tag("Add to cart") %>
   <%end %>
 </div>
 
 <div>
 <a class="btn btn-danger" href="/products">Home</a>
-<a class="btn btn-success" href="/products">continue shopping</a>
+
 </div>
+<%= image_tag "flying-possum-outstreched.png", alt: "possums arent currently in stock", class: "img-rounded" %>
