@@ -7,7 +7,7 @@
 <div id = add_to_cart>
   <%= form_tag("/cart", method: "post") do %>
     <%= hidden_field_tag(:id, @product.id) %>
-    <%= submit_tag("Add to cart") %>
+    <%= submit_tag "Add to cart", class: "btn btn-success" %>
   <%end %>
 </div>
 
