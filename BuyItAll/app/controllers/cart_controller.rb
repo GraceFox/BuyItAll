@@ -23,7 +23,8 @@ class CartController < ApplicationController
     user = User.first
     products = user.products
     products.each &:remove_from_cart!
-    redirect_to '/thanks'
+    flash[:notice] = "You have sucessfully bought beasts"
+    redirect_to '/products'
   end
 
 end

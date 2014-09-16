@@ -1,14 +1,17 @@
-<h1> <%=@product.name %> </h1>
+<h3> <%=@product.name %> </h3>
 
-<h2> $<%=@product.price%>0 </h2>
+<h1> $<%=@product.price%>0 </h1>
 
 <p> A flying animal of your choice - fantastic for reaching high places </p>
 
-<%= form_tag("/cart", method: "post") do %>
-<%= hidden_field_tag(:id, @product.id) %>
-<%= submit_tag("Add to cart") %>
-<%end %>
+<div id = add_to_cart>
+  <%= form_tag("/cart", method: "post") do %>
+  <%= hidden_field_tag(:id, @product.id) %>
+  <%= submit_tag("Add to cart") %>
+  <%end %>
+</div>
 
 <div>
 <a class="btn btn-danger" href="/products">Home</a>
+<a class="btn btn-success" href="/products">continue shopping</a>
 </div>
