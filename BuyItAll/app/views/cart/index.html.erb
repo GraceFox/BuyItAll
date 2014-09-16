@@ -1,14 +1,13 @@
-<h1> Cart </h1>
+<h1> Your Cart </h1>
 
 <div class = 'cart'>
   <p>Happy shopping</p>
 <ul>
   <% @products.each do |product| %>
     <li>
-      <%= link_to product.name, product %>
-      <%= product.price %>
-
-      <%= form_tag('/cart', method: 'delete', class: 'pull-left') do %>
+        <%= link_to product.name, product %>
+        <%= product.price %>
+        <%= form_tag('/cart', method: 'delete', class: 'pull-left') do %>
         <%= hidden_field_tag(:id, product.id) %>
         <%= submit_tag('x') %>
       <% end %>

@@ -20,7 +20,7 @@ class CartController < ApplicationController
   end
 
   def buy
-    user = User.first
+    user = User.find params[:id]
     products = user.products
     products.each &:remove_from_cart!
     flash[:notice] = "You have sucessfully bought beasts"
