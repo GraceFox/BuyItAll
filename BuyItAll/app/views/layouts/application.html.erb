@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BuyItAll</title>
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Give+You+Glory' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <% flash.each do |name, msg| -%>
+    <%= content_tag :div, msg, class: name %>
+  <% end %>
+
+<header class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+
+          <%= link_to " ", '#', id: "logo" %>
+          <nav>
+            <ul class="nav pull-right">
+              <li><%= link_to "Home",    '/products' %></li>
+              <li><%= link_to "Cart",    '/cart' %></li>
+              <li><%= render 'devise/registration_items' %></li>
+              <li><%= render 'devise/login_items' %></li>
+             </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+   <div class="container">
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<h3> <%=@product.name %> </h3>
+
+<h1> $<%=@product.price%>0 </h1>
+
+<p> A flying animal of your choice - fantastic for reaching high places </p>
+
+<div id = add_to_cart>
+  <%= form_tag("/cart", method: "post") do %>
+    <%= hidden_field_tag(:id, @product.id) %>
+    <%= submit_tag "Add to cart", class: "btn btn-success" %>
+  <%end %>
+</div>
+
+<div>
+<a class="btn btn-danger" href="/products">Home</a>
+
+</div>
+<%= image_tag "flying-possum-outstreched.png", alt: "possums arent currently in stock", class: "img-rounded" %>

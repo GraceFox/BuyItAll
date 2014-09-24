@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require bootstrap
+ *= require normalize
+ *= require_tree .
+ *= require_self
+ */
+body {
+  background-image: url(/images/flags.jpg);
+}
+
+h1 h2 {
+  font-family: 'Niconne', cursive;
+  size: 300px;
+  color: #6E5160;
+  }
+
+  h3 {
+    font-family: 'Give You Glory', cursive;
+    size: 200px;
+    color: #CC6666;
+  }
+
+
+#add_to_cart {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding left: 6 12;
+    /*font-color: #fff;*/
+
+  color: #5cb85c;
+  border: 1px;
+  border-color #4cae4c;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.cart {
+  width: 1000px;
+  margin: 80px 0 0;
+
+}
+
+.cart li {
+  margin: 10px 10px;
+  text-decoration: none;
+/*  padding-left: 10px;*/
+  list-style-type: none;
+}
+
+.cart p {
+  margin 0 0 40px;
+}
+
+#new_user {
+  width: 1000px;
+  margin: 80px 0 0;
+}
+
+
